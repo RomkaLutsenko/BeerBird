@@ -1,0 +1,15 @@
+{
+	"name": "beer-bird-project",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "cd server && NODE_ENV=production node server.js",
+		"build": "cd client && npm run build",
+		"dev:server": "cd server && nodemon server.js",
+		"dev:client": "cd client && npm run dev",
+		"dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.0",
+		"nodemon": "^3.0.1"
+	}
+}
